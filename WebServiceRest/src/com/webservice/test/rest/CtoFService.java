@@ -19,12 +19,12 @@ public class CtoFService {
 		Double celsius = 36.6;
 		
 		fehrenheit = ((celsius * 9)/5)+32;
+		int test = 0;
 		
 		String result = "@Produces(\"application/xml\") Output: \n\nC to F Converter Output: \n\n" + fehrenheit;
 		return "<ctofservice>" + "<celsius>" + celsius + "</celsius>" + "<ctofoutput>" + result + "</ctofoutput>" + "</ctofservice>";
 
-	}
-	
+	}	
 	@GET
 	@Path("/{orderID}")
 	public String returnFormatteStr(@PathParam("orderID") String orderIDVal) {
