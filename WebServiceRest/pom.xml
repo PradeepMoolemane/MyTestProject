@@ -62,4 +62,17 @@
 			<scope>runtime</scope>
 		</dependency>
 	</dependencies>
+	  <scm>
+        <developerConnection>scm:svn:https://svn.4synergy.nl/sandbox/myapp/trunk</developerConnection>
+    </scm>
+    <distributionManagement>
+        <repository>
+            <id>ec2-arti</id>
+            <url>http://artifactory.4synergy.nl/artifactory/libs-release-local</url>
+        </repository>
+        <snapshotRepository>
+            <id>ec2-arti</id>
+            <url>http://artifactory.4synergy.nl/artifactory/libs-snapshot-local</url>
+        </snapshotRepository>
+    </distributionManagement>
 </project>
