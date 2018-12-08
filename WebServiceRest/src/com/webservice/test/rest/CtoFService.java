@@ -7,7 +7,7 @@ import javax.ws.rs.PathParam;
 import javax.ws.rs.Produces;
 import javax.ws.rs.core.MediaType;
 
-@Path("/ctofService")
+@Path("/ctofService1")
 public class CtoFService {
 	
 	@GET
