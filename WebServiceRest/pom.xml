@@ -62,17 +62,20 @@
 			<scope>runtime</scope>
 		</dependency>
 	</dependencies>
-	  <scm>
-        <developerConnection>scm:svn:https://svn.4synergy.nl/sandbox/myapp/trunk</developerConnection>
-    </scm>
+	
+		
     <distributionManagement>
         <repository>
-            <id>ec2-arti</id>
-            <url>http://artifactory.4synergy.nl/artifactory/libs-release-local</url>
+                <uniqueVersion>false</uniqueVersion>
+	        <id>fedc-releases</id>
+	        <name>srv-usva-art01-releases</name>
+	        <url>http://localhost:8080/artifactory/ext-release-local</url>
         </repository>
         <snapshotRepository>
-            <id>ec2-arti</id>
-            <url>http://artifactory.4synergy.nl/artifactory/libs-snapshot-local</url>
+             <id>fedc-snapshots</id>
+	     <name>srv-usva-art01-snapshots</name>
+	     <url>http://localhost:8080/artifactory/ext-snapshot-local</url>
+             <uniqueVersion>true</uniqueVersion>
         </snapshotRepository>
-    </distributionManagement>
+    </distributionManagement>	 
 </project>
